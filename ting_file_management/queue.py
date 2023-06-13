@@ -22,6 +22,6 @@ class Queue(AbstractQueue):
             not isinstance(index, int)
             or index < 0
             or index + 1 > len(self._data)
-    ):
+        ):
             raise IndexError("Índice Inválido ou Inexistente")
         return self._data[index]
